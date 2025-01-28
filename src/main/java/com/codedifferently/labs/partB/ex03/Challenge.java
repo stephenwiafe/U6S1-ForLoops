@@ -6,6 +6,11 @@ public class Challenge {
         /**
          * Your code goes here
          */
+        String[] names = {"Kaleb", "Tariq", "Gio", "Sam", "Steph", "Michael"};
+
+        for (int i = 0; i < names.length; i++) {
+            response += names[i] + "\n";
+        }
         return response;
     }
 

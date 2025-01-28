@@ -4,9 +4,12 @@ public class FixThisLoop {
 
     public static String hello(){
         String response = "";
-        /**
+        /*
          * Your code goes here
          */
+        for (int i = 0; i < 5; i++) {
+            response += "Hello\n";
+        }
 
         return response;
 

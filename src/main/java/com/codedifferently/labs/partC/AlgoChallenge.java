@@ -14,9 +14,7 @@ public class AlgoChallenge {
      */
 
     public static Boolean avengersAssemble(boolean dcHero, boolean avengerHero) {
-
-        return null;
-
+        return !dcHero || avengerHero;
     }
 
     /* Problem 2
@@ -31,8 +29,17 @@ public class AlgoChallenge {
      */
 
     public static Boolean nearValue(int n) {
-
-        return null;
+        return  Math.abs(100 - n) <= 10 || Math.abs(200 - n) <= 10;
     }
 
+    public static void main(String[] args) {
+        System.out.println(avengersAssemble(false, false));
+        System.out.println(avengersAssemble(false, true));
+        System.out.println(avengersAssemble(true, false));
+        System.out.println(avengersAssemble(true, true));
+
+        System.out.println(nearValue(93));
+        System.out.println(nearValue(90));
+        System.out.println(nearValue(89));
+    }
 }
